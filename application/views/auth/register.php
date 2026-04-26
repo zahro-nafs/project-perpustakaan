@@ -23,7 +23,7 @@
 <body class="hold-transition register-page">
   <div class="register-box">
     <div class="register-logo">
-      <a href="<?php echo base_url(); ?>"><b>Sistem Informasi Perpustakaan</b></a>
+      <a href="<?php echo base_url('auth'); ?>"><b>Sistem Informasi Perpustakaan</b></a>
     </div>
 
     <div class="card">

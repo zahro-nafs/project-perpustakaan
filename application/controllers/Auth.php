@@ -10,7 +10,7 @@ class Auth extends CI_Controller
 
     function index()
     {
-        $this->load->view('login');
+        $this->load->view('auth/login');
     }
     function login()
     {
@@ -51,7 +51,7 @@ class Auth extends CI_Controller
 }
     function register()
     {
-        $this->load->view('register');
+        $this->load->view('auth/register');
     }
 
     function register_action()
@@ -69,7 +69,7 @@ class Auth extends CI_Controller
 
         // jika validasi gagal
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('register');
+            $this->load->view('auth/register');
         } else {
             $username = trim($this->input->post('username'));
             $email = trim($this->input->post('email'));
